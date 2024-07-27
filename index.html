@@ -5,38 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Freak</title>
     <link rel="stylesheet" href="static/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        iframe {
+            width: 100%;
+            height: 80vh;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Fitness Freak</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="bmi.html">BMI Calculator</a></li>
-                <li><a href="calorie.html">Calorie Calculator</a></li>
-                <li><a href="cont.html">Content</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="home.html">Home Page</a></li>
-                <li><a href="layout.html">Layout</a></li>
-                <li><a href="log.html">Log</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="macro.html">Macro Calculator</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="temp.html">Template</a></li>
-                <li><a href="update.html">Update</a></li>
-                <li><a href="view.html">View</a></li>
+                <li><a href="home.html" target="content-frame">Home</a></li>
+                <li><a href="about.html" target="content-frame">About</a></li>
+                <li><a href="bmi.html" target="content-frame">BMI Calculator</a></li>
+                <li><a href="calorie.html" target="content-frame">Calorie Calculator</a></li>
+                <li><a href="cont.html" target="content-frame">Content</a></li>
+                <li><a href="contact.html" target="content-frame">Contact</a></li>
+                <li><a href="dashboard.html" target="content-frame">Dashboard</a></li>
+                <li><a href="layout.html" target="content-frame">Layout</a></li>
+                <li><a href="log.html" target="content-frame">Log</a></li>
+                <li><a href="login.html" target="content-frame">Login</a></li>
+                <li><a href="macro.html" target="content-frame">Macro Calculator</a></li>
+                <li><a href="profile.html" target="content-frame">Profile</a></li>
+                <li><a href="register.html" target="content-frame">Register</a></li>
+                <li><a href="temp.html" target="content-frame">Template</a></li>
+                <li><a href="update.html" target="content-frame">Update</a></li>
+                <li><a href="view.html" target="content-frame">View</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Welcome to Fitness Freak</h2>
-            <p>Your one-stop solution for all your fitness tracking needs. Track your BMI, calories, and daily food intake easily.</p>
-        </section>
-    </main>
+    <iframe name="content-frame" src="home.html"></iframe>
     <footer>
         <p>&copy; 2024 Fitness Freak. All rights reserved.</p>
     </footer>
